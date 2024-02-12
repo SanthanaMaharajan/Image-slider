@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.slide-container{
+    width: 90%;
+    margin:auto;
+    margin-top: 50px;
+    position: relative;
+    display:flex;
+}
+img{
+    width: 100%;
+}
+.slides{
+    position: relative;
+    width:100%;
+    display: none;
+}
+.slide-name{
+    position:absolute;
+    color:#fff;
+    background-color: rgba(255, 255, 255,0.3);
+    bottom:26%;
+    left: 15%;
+    padding:5px;
+}
+#hong-kong ,#shangai{
+    bottom: 31%;
+}
+.slide-cnt{
+    position:absolute;
+    width:25%;
+    color:#fff;
+    background-color: rgba(255, 255, 255,0.3);
+    bottom:10%;
+    left: 15%;
+    padding:10px;
+}
+.prev-btn, .next-btn{
+    font-size: 35px;
+    position: absolute;
+    top: 45%;
+    padding:10px;
+    color:#fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.prev-btn{
+    left: 5%;
+}
+.next-btn{
+    right:5%;
+}
+.prev-btn:active, .next-btn:active{
+    transform: scale(0.9);
+}
+.dots-container{
+    position: absolute;
+    bottom: 2%;
+    left:45%;
+}
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display:inline-block;
+}
+#active, .dot:hover {
+	background-color: #717171;
+}
